@@ -16,9 +16,9 @@ var Stack = function() {
     if (!stackSize) {
       return;
     }
-    let data = storage[stackSize - 1];
-    delete storage[stackSize - 1];
     stackSize--;
+    let data = storage[stackSize];
+    delete storage[stackSize];
     return data;
   };
 
