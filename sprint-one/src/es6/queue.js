@@ -15,9 +15,9 @@ class Queue {
   }
 
   dequeue() {
-    if (!this.storageSize) {
-      return;
-    }
+  if (!this.storageSize) {
+    return;
+  }
 
     let data = this.storage[this.front];
     delete this.storage[this.front];

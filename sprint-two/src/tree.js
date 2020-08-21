@@ -3,7 +3,8 @@ var Tree = function(value) {
   newTree.value = value;
 
   // your code here
-  newTree.children = null;  // fix me
+  newTree.children = [];
+
 
   return newTree;
 };
@@ -11,12 +12,15 @@ var Tree = function(value) {
 var treeMethods = {};
 
 treeMethods.addChild = function(value) {
+  // create new tree
+
+
+  // add child to the tree object
 };
 
 treeMethods.contains = function(target) {
+
 };
-
-
 
 /*
  * Complexity: What is the time complexity of the above functions?
