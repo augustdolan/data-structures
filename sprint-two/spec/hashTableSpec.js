@@ -74,3 +74,5 @@ describe('hashTable', function() {
     expect(hashTable._limit).to.equal(8);
   });
 });
+
+// august: test for collision removal

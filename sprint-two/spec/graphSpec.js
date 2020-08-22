@@ -69,3 +69,6 @@ describe('graph', function() {
     expect(graph.hasEdge(5, 5)).to.equal(true);
   });
 });
+
+
+// graph shouldn't add duplicated data
