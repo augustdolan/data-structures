@@ -37,4 +37,19 @@ describe('binarySearchTree', function() {
     binarySearchTree.depthFirstLog(func);
     expect(array).to.eql([5, 2, 3, 7]);
   });
+
+  // student created tests
+
+  it('should not replace an already existing tree using insert', function() {
+    binarySearchTree.insert(2);
+    binarySearchTree.insert(1);
+    binarySearchTree.insert(2);
+    expect(binarySearchTree.contains(1)).to.equal(true);
+  });
+
+  it('should not create a duplicate of a pre-existing value', function() {
+    binarySearchTree.insert(5);
+    expect(binarySearchTree.right).to.equal(null);
+    expect(binarySearchTree.left).to.equal(null);
+  });
 });
