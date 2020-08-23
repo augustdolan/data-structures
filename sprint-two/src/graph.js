@@ -57,18 +57,15 @@ Graph.prototype.forEachNode = function(cb) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+
+ addNode: O(1)
+ contains: O(1)
+ removeNode: O(n * n)
+ hasEdge: O(n)
+ addEdge: O(1)
+ removeEdge: O(n)
+ forEachNode: O(n)
  */
-
-
-// target.edges.(iterative step to edge).edges.(iterative step to node) <== delete that
-
-
-// nodeToRemove = {value: x, edges: [node1, node2, node3]}
-// for (node in nodeToRemove[edges]):
-//   removeNode(nodeToRemove, node):
-//   for (edge in node.edges):
-//     if (edge === nodeToRemove):
-//       remove it from the array
 
 
 
