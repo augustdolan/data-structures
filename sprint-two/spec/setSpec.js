@@ -24,4 +24,13 @@ describe('set', function() {
     expect(set.contains('Mel Gibson')).to.equal(false);
   });
 
+  it('should not contain duplicate values', function() {
+    set.add('Sam');
+    set.add('Sam');
+    let count = 0;
+    for (let key in set._storage) {
+      count++;
+    }
+    expect(count).to.equal(1);
+  });
 });
