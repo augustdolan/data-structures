@@ -68,6 +68,16 @@ describe('graph', function() {
     expect(graph.hasEdge(3, 5)).to.equal(true);
     expect(graph.hasEdge(5, 5)).to.equal(true);
   });
+
+  it('should not add duplicated data', function() {
+    graph.addNode(2);
+    graph.addNode(2);
+    let count = 0;
+    graph.forEachNode(function() {
+      count++;
+    });
+    expect(count).to.equal(1);
+  });
 });
 
 
