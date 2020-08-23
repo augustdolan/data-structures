@@ -43,6 +43,9 @@ HashTable.prototype.remove = function(k) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+ insert: O(1) => if collision O(n)
+ retrieve: O(1) => if collision O(n)
+ remove: O(1) => if collision O(n)
  */
 
 
