@@ -60,7 +60,7 @@ Graph.prototype.forEachNode = function(cb) {
 
  addNode: O(1)
  contains: O(1)
- removeNode: O(n * n)
+ removeNode: O(n * n) <== this is due to bad implementation
  hasEdge: O(n)
  addEdge: O(1)
  removeEdge: O(n)
