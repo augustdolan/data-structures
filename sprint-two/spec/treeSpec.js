@@ -42,8 +42,6 @@ describe('tree', function() {
     expect(tree.contains(8)).to.equal(true);
   });
 
-
-
   describe('student created tests', function() {
     it('should retain all children added to tree', function() {
       tree.addChild(6);
